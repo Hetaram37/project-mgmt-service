@@ -1,0 +1,35 @@
+{
+  "port": 9000,
+  "app": {
+    "name": "project-mgmt-service"
+  },
+  "image": {
+    "protocol": "http",
+    "host": "127.0.0.1"
+  },
+  "JWT_key": "hdUis%19cDj$5dkjcdF!c8G8",
+  "expiry_time": 2,
+  "database": {
+    "host": "127.0.0.1:27017",
+    "default_db_name": "my_product",
+    "authentication": true,
+    "user": "ram",
+    "pass": "adminPass!@#",
+    "auth_source": "admin",
+    "mongo_options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  },
+  "cors": {
+    "origin": "*",
+    "preflightContinue": true,
+    "optionsSuccessStatus": 204,
+    "methods": "GET,PUT,POST,DELETE,OPTIONS",
+    "allowedHeaders": ["Content-Type, Authorization, Content-Length, X-Requested-With, Accept, Origin"],
+    "exposedHeaders": ["Authorization"]
+  },
+  "exclude_url": [
+    "/api/auth/v1/login"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "port": 9000,
+  "app": {
+    "name": "project-mgmt-service"
+  },
+  "database": {
+    "host": "127.0.0.1:27017",
+    "default_db_name": "my_product",
+    "authentication": true,
+    "user": "ram",
+    "pass": "adminPass!@#",
+    "auth_source": "admin",
+    "mongo_options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  }
+}
